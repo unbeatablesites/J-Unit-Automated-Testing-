@@ -1,4 +1,4 @@
-package com.FrankUzoka.JUnitAutomatedTesting.controller.repos;
+package com.FrankUzoka.JUnitAutomatedTesting.repos;
 
 public interface CustomerContactRepository extends CrudRepository<CustomerContact, Long> {
 
