@@ -34,13 +34,22 @@ class FormTest {
 
     @Test
     void setFirstName() {
+        Form form = new Form();
+        form.setFirstName("Frank");
+        assertEquals("Frank",form.getFirstName());
     }
 
     @Test
     void getLastName() {
+        Form form = new Form();
+        form.setLastName("Uzoka");
+        assertEquals("Uzoka",form.getLastName());
     }
 
     @Test
     void setLastName() {
+        Form form = new Form();
+        form.setLastName("Uzoka");
+        assertEquals("Uzoka",form.getLastName());
     }
 }
