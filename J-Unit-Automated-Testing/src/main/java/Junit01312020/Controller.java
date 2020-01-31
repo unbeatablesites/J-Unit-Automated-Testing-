@@ -1,9 +1,7 @@
 package Junit01312020;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -14,7 +12,11 @@ public class Controller {
     @Autowired repo repo1;
 
 
+@PostMapping("/newEntry")
+public Form createForm(@RequestBody Form form){
 
+    return repo1.save(form);
+}
 
 
     @GetMapping("/getAll")
