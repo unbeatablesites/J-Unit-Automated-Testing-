@@ -8,10 +8,25 @@ import java.util.List;
 @Repository
 public interface repo extends JpaRepository<Form, Integer> {
 
-List<Form> findByFirstName(String firstName);
+    /**
+     *
+     * @param firstName
+     * @return
+     */
+    List<Form> findByFirstName(String firstName);
 
-List<Form> findByLastName(String lastName);
+    /**
+     *
+     * @param lastName
+     * @return
+     */
+    List<Form> findByLastName(String lastName);
 
-Form findFormById(Integer id);
+    /**
+     *
+     * @param id
+     * @return
+     */
+    Form findFormById(Integer id);
 
 }
