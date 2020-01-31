@@ -30,6 +30,5 @@ public interface repo extends JpaRepository<Form, Integer> {
     Form findFormById(Integer id);
 
 
-
-
+    Form add(Form form);
 }
