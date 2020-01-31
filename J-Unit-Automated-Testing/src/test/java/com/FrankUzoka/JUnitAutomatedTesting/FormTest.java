@@ -17,10 +17,19 @@ class FormTest {
 
     @Test
     void setId() {
+
+        Form form = new Form();
+        form.setId(1);
+        assertEquals(1,form.getId());
+
     }
 
     @Test
     void getFirstName() {
+
+        Form form = new Form();
+        form.setFirstName("Frank");
+        assertEquals("Frank",form.getFirstName());
     }
 
     @Test
